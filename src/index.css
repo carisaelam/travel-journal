@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inconsolata", monospace;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.card__big__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.header__container {
+  background-color: #ef4249;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container h1 {
+  font-size: 1.5rem;
+}
+
+.header__container img {
+  height: 2rem;
+  margin: 1rem;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 100%;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex;
+  background-color: hsla(0, 0%, 100%, 0.222);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  box-shadow: 0 5px 10px rgba(179, 179, 179, 0.612);
+}
+
+.card__image__container {
+  width: 100%;
+}
+
+.card__image {
+  object-fit: cover;
+  max-height: 10rem;
+  min-width: 100%;
+}
+
+.card__text__container {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__text--top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1rem 0;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card__text__country {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.card__text--top a {
+  color: hsla(0, 0%, 50%, 0.614);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.card__text--top a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  color: hsl(242, 100%, 59%);
+}
+
+.card__text__timeline {
+  font-size: 1rem;
+}
+
+.card__text--bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
+  line-height: 1.3rem;
+}
